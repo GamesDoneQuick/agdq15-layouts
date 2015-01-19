@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <link href="style/agdq-main.css" rel="stylesheet">
+    <link href="style/agdq-16x9_1.css" rel="stylesheet">
+    <link href="font/gamegirl_classic.css" rel="stylesheet">
+    <link rel="stylesheet" href="/components/fontawesome/css/font-awesome.min.css">
+    <!-- In the header to prevent rendering flicker during font acquisition-->
+    <script src="//use.typekit.net/rka8num.js"></script>
+    <script>try {Typekit.load();} catch (e) {}</script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header"><img src="img/header-logo.png" class="header-logo">
+        <div class="header-hashtag">#Hashtag</div>
+      </div>
+      <div class="game">
+        <div class="game-title">Waiting for data...</div>
+        <div class="game-srDetails">
+          <div class="game-srDetails-category">EST:</div>
+          <div class="game-srDetails-estimate font-gameGirl">8:88:88</div>
+        </div>
+      </div>
+      <div id="runner1" class="runner">Running Person</div>
+      <div class="timer">
+        <div class="timer-label">
+          <div style="overflow: hidden; width: 100%; height: 100%;">
+            <div class="timer-label-wing"></div>
+          </div>
+          <div class="timer-label-text">TIMER</div>
+          <div style="overflow: hidden; width: 100%; height: 100%;">
+            <div style="transform: translate(-2px, 49%);" class="timer-label-wing"></div>
+          </div>
+        </div>
+        <div class="timer-body font-gameGirl"></div>
+      </div>
+      <div class="rotation">
+        <div class="rotation-sponsors"></div>
+        <div class="rotation-prize">
+          <div class="rotation-prize-info">
+            <div class="rotation-prize-name"></div>
+            <div class="rotation-prize-min"></div>
+          </div>
+          <div class="rotation-prize-img"></div>
+        </div>
+        <div class="rotation-deck">
+          <div class="rotation-deck-label">UP NEXT</div>
+          <div class="rotation-deck-game">...</div>
+          <div class="rotation-deck-timer font-gameGirl">00:00:00</div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-total">Fundraising Total:<span class="footer-total-amount">Retrieving...</span></div><img src="img/pcf-logo.png" class="footer-pcf">
+      </div>
+    </div>
+    <script src="lib/jquery-2.1.1.min.js"></script>
+    <script src="lib/textFit.min.js"></script>
+    <script src="lib/TweenMax.min.js"></script>
+    <script src="lib/SplitText.min.js"></script>
+    <script src="lib/formatMoney.js"></script>
+    <script src="app/agdq15-layouts.js"></script>
+    <!-- NodeCG API, must be the last script included!-->
+    <script src="/viewsetup.js"></script>
+  </body>
+</html>

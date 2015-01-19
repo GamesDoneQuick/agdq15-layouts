@@ -1,0 +1,79 @@
+.container {
+    background-image: url("/view/agdq15-layouts/img/bg/agdq-4x3_3.png");
+}
+.game {
+    width: 463px;
+    height: 66px;
+    bottom: 219px;
+    left: 387px;
+    position: absolute;
+}
+.game-title {
+    font-size: 33px;
+    margin-top: -3px;
+    margin-bottom: -4px;
+}
+.game-srDetails {
+    margin-top: 6px;
+}
+.game-srDetails-category {
+    font-size: 18px;
+}
+.game-srDetails-estimate {
+    font-size: 23px;
+}
+.runner {
+    width: 386px;
+    height: 40px;
+    font-size: 30px;
+    top: 372px;
+}
+#runner1 {
+    left: 15px;
+}
+#runner2 {
+    left: 441px;
+}
+#runner3 {
+    right: 15px;
+}
+.timer {
+    width: 408px;
+    bottom: 209px;
+    right: 12px;
+}
+.timer-body {
+    font-size: 36px;
+    line-height: 38px;
+    height: 46px;
+}
+.footer {
+    background: none;
+}
+.rotation {
+    width: 881px;
+    height: 144px;
+    bottom: 62px;
+    right: 12px;
+}
+.rotation-sponsors {
+    background-image: url("/view/agdq15-layouts/img/sponsors/4x3_3.png");
+}
+.rotation-deck-label {
+    font-size: 30px;
+}
+.rotation-deck-game {
+    font-size: 42px;
+}
+.rotation-deck-timer {
+    font-size: 32px;
+}
+.rotation-prize {
+    justify-content: center;
+}
+.rotation-prize-info {
+    width: auto;
+}
+.rotation-prize-img {
+    width: 256px;
+}

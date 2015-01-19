@@ -1,0 +1,89 @@
+mixin runInfoProperty(name)
+    div(class="runInfo-#{name}" style="display: flex; align-items: baseline;")
+        label.control-label=name
+        p.form-control-static(style="word-wrap: break-word;") ?
+
+div(style="display: flex;")
+    .column
+        .ncg-btn-group
+            .btn-group.btn-group-justified.returnsResult
+                .btn-group.js-update
+                    button.btn.btn-xs.btn-warning(type='button' title='Schedule updates automatically on a timer, this forces an immediate update')
+                        | Force Schedule Update
+                    span.btn.btn-xs.btn-danger.updateResult.updateResult-error Error
+                    span.btn.btn-xs.btn-default.updateResult.updateResult-default Default
+                    span.btn.btn-xs.btn-success.updateResult.updateResult-success Success
+
+        .ncg-label SEQUENTIAL SELECT
+        .ncg-btn-group
+            .btn-group.btn-group-justified
+                .btn-group
+                    button.js-prev.btn.btn-xs.btn-info(type='button') Prev
+                .btn-group
+                    button.js-next.btn.btn-xs.btn-primary(type='button') Next
+
+        p(style="margin-top:8px; font-size: small;") Next Run:&nbsp
+            span(style="font-weight: bold").js-nextRun
+        hr
+
+        .ncg-label MANUAL SELECT
+        .input-group
+            input.typeahead.form-control(type="text" placeholder="Type a game or runner")
+            span.input-group-btn
+                span.btn.btn-xs.btn-success.js-manualBtn(style="height: 35px;")
+                    i.fa.fa-arrow-right
+
+    .column
+        .ncg-label(style="margin-top: 0px;") CURRENT RUN INFO
+        div.runInfo
+            +runInfoProperty('game')
+            +runInfoProperty('console')
+            +runInfoProperty('runners')
+            +runInfoProperty('streamlinks')
+            +runInfoProperty('estimate')
+            +runInfoProperty('category')
+            +runInfoProperty('comments')
+            +runInfoProperty('index')
+        .ncg-btn-group
+            .btn-group.btn-group-justified.returnsResult
+                .btn-group
+                    button.btn.btn-xs.btn-primary(type='button' data-toggle="modal" data-target="#agdq15-layouts_editRun") Edit Manually
+
+#agdq15-layouts_editRun.modal.fade
+    .modal-dialog
+        .modal-content
+            .modal-header
+                button.close(type="button", data-dismiss="modal")
+                    span(aria-hidden="true") &#215;
+                    span.sr-only Close
+                h4.modal-title Edit current run
+            .modal-body
+                .alert.alert-info(role="alert", style="margin-top: 8px; font-size: 16px;")
+                    | These changes are <b>temporary</b>, and are <b>not</b> permanently saved to the schedule.
+                .input-group
+                    span.input-group-addon Game
+                    input.form-control(type="text" name="game")
+                .input-group(style="margin-top: 6px;")
+                    span.input-group-addon Console
+                    input.form-control(type="text" name="console")
+                .input-group(style="margin-top: 6px;")
+                    span.input-group-addon Runners
+                    input.form-control(type="text" name="runners", placeholder="Use a comma-separated list")
+                    span.input-group-addon(style="font-size: 16px; cursor: help;" data-toggle="tooltip" data-placement="left" data-container="body" title="Separate each runner's name with a comma")
+                        i.fa.fa-question-circle
+                .input-group(style="margin-top: 6px;")
+                    span.input-group-addon Stream links
+                    input.form-control(type="text" name="streamlinks", placeholder="Use a comma-separated list")
+                    span.input-group-addon(style="font-size: 16px; cursor: help;" data-toggle="tooltip" data-placement="left" data-container="body" title="Separate each runner's channel with a comma")
+                        i.fa.fa-question-circle
+                .input-group(style="margin-top: 6px;")
+                    span.input-group-addon Category
+                    input.form-control(type="text" name="category")
+                .input-group(style="margin-top: 6px;")
+                    span.input-group-addon Estimate
+                    input.form-control(type="text" name="estimate")
+            .modal-footer
+                button.js-save.btn.btn-primary.btn-sm(type="button", data-dismiss="modal")
+                    i.fa.fa-floppy-o
+                    | &nbsp;&nbsp;Save & Close
+                button.btn.btn-default.btn-sm(type="button", data-dismiss="modal") Cancel

@@ -1,0 +1,23 @@
+[
+  {
+    "name": "schedule",
+    "title": "Schedule",
+    "width": 4,
+    "file": "schedule.jade",
+    "faIcon": "fa-clock-o"
+  },
+  {
+    "name": "prizes",
+    "title": "Prizes",
+    "width": 4,
+    "file": "prizes.jade",
+    "faIcon": "fa-gift"
+  },
+  {
+    "name": "total",
+    "title": "Total",
+    "width": 2,
+    "file": "total.jade",
+    "faIcon": "fa-dollar"
+  }
+]

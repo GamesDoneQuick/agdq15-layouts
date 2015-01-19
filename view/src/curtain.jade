@@ -1,0 +1,42 @@
+doctype html
+html
+    head(lang='en')
+        meta(charset='UTF-8')
+        link(href='style/agdq-main.css', rel='stylesheet')
+        link(href='style/curtain.css', rel='stylesheet')
+        link(href='font/gamegirl_classic.css', rel='stylesheet')
+
+        // In the header to prevent rendering flicker during font acquisition
+        script(src='//use.typekit.net/rka8num.js')
+        script.
+            try {Typekit.load();} catch (e) {}
+
+        // Curtain has a separate display for "on deck"
+        script.
+            window.layoutName = 'curtain';
+            window.noCurrentRun = true;
+            window.noDeck = true;
+    body
+        .container
+            .banner
+            .nextBanner
+            .rotation
+                .rotation-sponsors
+                .rotation-prize
+                    .rotation-prize-info
+                        .rotation-prize-name
+                        .rotation-prize-min
+                    .rotation-prize-img
+                .rotation-upcoming
+                    .rotation-upcoming-label
+            include ./includes/footer.jade
+
+        script(src="lib/jquery-2.1.1.min.js")
+        script(src="lib/textFit.min.js")
+        script(src="lib/TweenMax.min.js")
+        script(src="lib/SplitText.min.js")
+        script(src="lib/formatMoney.js")
+        script(src="app/agdq15-layouts.js")
+        script(src="app/curtain.js")
+        // NodeCG API, must be the last script included!
+        script(src="/viewsetup.js")
