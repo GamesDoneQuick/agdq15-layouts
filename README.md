@@ -44,5 +44,5 @@ agdq15-layouts is provided under the Apache v2 license, which is available to re
 [license]: LICENSE
 
 ### Credits
-[Alex "Lange" Van Camp](http://alexvan.camp), developer
+[Alex "Lange" Van Camp](http://alexvan.camp), developer  
 [Chris Hanel](http://chrishanel.com/), designer
