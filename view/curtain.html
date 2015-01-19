@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <link href="style/agdq-main.css" rel="stylesheet">
+    <link href="style/curtain.css" rel="stylesheet">
+    <link href="font/gamegirl_classic.css" rel="stylesheet">
+    <!-- In the header to prevent rendering flicker during font acquisition-->
+    <script src="//use.typekit.net/rka8num.js"></script>
+    <script>
+      try {Typekit.load();} catch (e) {}
+      
+    </script>
+    <!-- Curtain has a separate display for "on deck"-->
+    <script>
+      window.layoutName = 'curtain';
+      window.noCurrentRun = true;
+      window.noDeck = true;
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="banner"></div>
+      <div class="nextBanner"></div>
+      <div class="rotation">
+        <div class="rotation-sponsors"></div>
+        <div class="rotation-prize">
+          <div class="rotation-prize-info">
+            <div class="rotation-prize-name"></div>
+            <div class="rotation-prize-min"></div>
+          </div>
+          <div class="rotation-prize-img"></div>
+        </div>
+        <div class="rotation-upcoming">
+          <div class="rotation-upcoming-label"></div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-total">Fundraising Total:<span class="footer-total-amount">Retrieving...</span></div><img src="img/pcf-logo.png" class="footer-pcf">
+      </div>
+    </div>
+    <script src="lib/jquery-2.1.1.min.js"></script>
+    <script src="lib/textFit.min.js"></script>
+    <script src="lib/TweenMax.min.js"></script>
+    <script src="lib/SplitText.min.js"></script>
+    <script src="lib/formatMoney.js"></script>
+    <script src="app/agdq15-layouts.js"></script>
+    <script src="app/curtain.js"></script>
+    <!-- NodeCG API, must be the last script included!-->
+    <script src="/viewsetup.js"></script>
+  </body>
+</html>
