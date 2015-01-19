@@ -11,7 +11,7 @@ This bundle is not intended to be used verbatim. Many of the assets have been re
 most of the data sources are hardcoded. We are open-sourcing this bundle in hopes that people will use it as a
 learning tool and base to build from, rather than just taking and using it wholesale in their own productions.
 
-To re-iterate, please don't just download and use this bundle as-is. Build something new from it.
+To reiterate, please don't just download and use this bundle as-is. Build something new from it.
 
 ## Development
 agdq15-layouts has a `grunt` build process for the jade files used in the views (`view/src/**/*.jade`).
@@ -30,6 +30,8 @@ To run `grunt` in the `agdq15-layouts` folder, do the following:
   grunt watch
   ```
 
+If you've already installed this bundle, then you can simply run `nodecg install --dev` from the `agdq15-layouts` folder.
+
 Now, any changes made to the view jade files will trigger an automatic rebuild.
 
 ## Fonts
@@ -38,7 +40,7 @@ If you wish to access agdq15-layouts from anything other than `localhost`, you w
 and whitelist the appropriate addresses.
 
 ## License
-agdq15-layouts is provided under the MIT license, which is available to read in the [LICENSE][] file.
+agdq15-layouts is provided under the Apache v2 license, which is available to read in the [LICENSE][] file.
 [license]: LICENSE
 
 ### Credits
