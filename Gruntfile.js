@@ -16,7 +16,9 @@ module.exports = function(grunt) {
                     "view/4x3_4.html": ["view/src/4x3_4.jade"],
                     "view/16x9_1.html": ["view/src/16x9_1.jade"],
                     "view/16x9_2.html": ["view/src/16x9_2.jade"],
-                    "view/16x9_3.html": ["view/src/16x9_3.jade"]
+                    "view/16x9_3.html": ["view/src/16x9_3.jade"],
+                    "view/curtain.html": ["view/src/curtain.jade"],
+                    "view/finale.html": ["view/src/finale.jade"]
                 }
             }
         },
