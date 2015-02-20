@@ -18,19 +18,12 @@ agdq15-layouts has a `grunt` build process for the jade files used in the views 
 These are the only files that must be re-built after any changes are made to them.
 No other files in agdq15-layouts require a build process.
 
-To run `grunt` in the `agdq15-layouts` folder, do the following:
+To run `grunt` in the `agdq15-layouts` folder, run the following commands from it:
 
-1. Install [NodeCG](http://github.com/nodecg/nodecg)
-2. Install [nodecg-cli](http://github.com/nodecg/nodecg-cli)
-3. From the NodeCG directory, run the following:
-
-  ```
-  nodecg install gamesdonequick/agdq15-layouts --dev
-  cd bundles/agdq15-layouts
-  grunt watch
-  ```
-
-If you've already installed this bundle, then you can simply run `nodecg install --dev` from the `agdq15-layouts` folder.
+```
+$ npm install
+$ grunt watch
+```
 
 Now, any changes made to the view jade files will trigger an automatic rebuild.
 
