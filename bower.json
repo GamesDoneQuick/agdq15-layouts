@@ -1,0 +1,8 @@
+{
+  "name": "agdq15-layouts",
+  "dependencies": {
+    "jquery": "^2.1.1",
+    "gsap": "^1.15.1",
+    "textfit": "^2.1.1"
+  }
+}

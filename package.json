@@ -1,0 +1,12 @@
+{
+  "name": "agdq15-layouts",
+  "dependencies": {
+    "request": "^2.51.0",
+    "google-spreadsheet": "~0.2.8"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jade": "~0.14.0",
+    "grunt-contrib-watch": "~0.6.1"
+  }
+}

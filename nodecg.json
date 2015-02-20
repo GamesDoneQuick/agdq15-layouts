@@ -1,7 +1,7 @@
 {
   "name": "agdq15-layouts",
-  "version": "1.0.0",
-  "nodecgDependency": "~0.4.0",
+  "version": "1.1.0",
+  "nodecgDependency": "~0.5.0",
   "homepage": "http://gamesdonequick.com/",
   "authors": [
     "Chris Hanel <chrishanel@gmail.com>",
@@ -12,14 +12,5 @@
   "extension": {
     "express": false,
     "path": "extension.js"
-  },
-  "dependencies": {
-    "request": "^2.51.0",
-    "google-spreadsheet": "~0.2.8"
-  },
-  "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-contrib-jade": "~0.14.0",
-    "grunt-contrib-watch": "~0.6.1"
   }
 }
